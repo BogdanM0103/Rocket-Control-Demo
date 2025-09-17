@@ -19,19 +19,7 @@ This repository contains a set of Unity C# scripts that control **player movemen
 
 ### 🔁 Oscillator.cs
 - Moves an object back and forth between two points using `Mathf.PingPong`.  
-- Creates smooth oscillating movement for platforms or obstacles.  
-
-### 💣 Explosion.cs
-- Defines an explosion with a radius and damage value.  
-- Draws a gizmo in the Scene view to visualize the explosion range.  
-- Intended to damage enemies within range when triggered.  
-
-### 🤖 EnemyHealth.cs
-- Tracks an enemy’s health.  
-- Takes damage when hit, and if health reaches zero:  
-  - Plays an explosion effect.  
-  - Notifies the `GameManager` to decrease the enemy count.  
-  - Destroys the enemy GameObject.  
+- Creates smooth oscillating movement for platforms or obstacles.
 
 ### ⎋ QuitApplication.cs
 - Quits the game when **Escape** is pressed.  
@@ -42,8 +30,6 @@ This repository contains a set of Unity C# scripts that control **player movemen
 ## 🕹️ Game Flow
 1. **Movement.cs** → Controls the player’s thrust and rotation.  
 2. **CollisionHandler.cs** → Handles success, crash, or ignore outcomes on collision.  
-3. **EnemyHealth.cs** → Manages enemy health and destruction.  
-4. **Explosion.cs** → Provides area-of-effect damage (expandable).  
 5. **Oscillator.cs** → Animates moving obstacles/platforms.  
 6. **QuitApplication.cs** → Allows quitting the game with Escape.  
 
